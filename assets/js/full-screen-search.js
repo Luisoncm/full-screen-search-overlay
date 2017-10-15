@@ -4,7 +4,8 @@ jQuery( document ).ready( function( $ ) {
     // ... display the Full Screen search when:
     // 1. The user focuses on a search field, or
     // 2. The user clicks the Search button
-    $( 'form[role=search] input, form[role=search] button' ).on( 'focus, click', function( event ) {
+    // 3. The user clicks on a custom link with '#search' as a url
+    $( 'form[role=search] input, form[role=search] button, a[href="#search"]' ).on( 'focus, click', function( event ) {
         // Prevent the default action
         event.preventDefault();
 
